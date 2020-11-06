@@ -2,11 +2,12 @@
     $login = $_POST['login'];
     $senha = $_POST['senha'];
 
-    $connect = mysql_connect('localhost', 'root', '');
-    $db = mysql_select_db('crud');
+    //comandos que iniciam com mysql foram descontinuados. Agora inicia com mysqli
+    $connect = mysqli_connect('localhost', 'root', '');
+    $db = mysqli_select_db('crud');
     $query_select = "SELECT login from usuarios WHERE login = '$login'";
-    $select = mysql_query($query_select, $connect);
-    $array = mysql_fetch_array($select);
+    $select = mysqli_query($query_select, $connect);
+    $array = mysqli_fetch_array($select);
     $logarray = $array['login'];
 
     if($login == "" || $login == null){
@@ -21,7 +22,7 @@
         }
         else{
             $query = "INSERT INTO usuarios (login, senha) VALUES ('$login', '$senha')";
-            $insert = mysql_query($query, $connect);
+            $insert = mysqli_query($query, $connect);
 
             if($insert){
                 echo "<script language='javascript' type='text/javascript'>

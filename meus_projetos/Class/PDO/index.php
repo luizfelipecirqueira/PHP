@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-    <?php
-        include ("ClassConexao.php");
+<?php include("Includes/Header.php");?>
+    <div class="Content">
+        <?php
+            include ("ClassConexao.php");
         
-    ?>
-</html>
+        ?>
+    </div>
+<?php include("Includes/Footer.php");?>

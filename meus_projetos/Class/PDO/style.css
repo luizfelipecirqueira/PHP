@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+}
+
+.Nav{
+    float: left;
+    width: 100%;
+    background: #000;
+}
+.Nav li{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.Nav a{
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    color: #ffff;
+    font-weight: bold;
+}
+
+.Content{
+    float: left;
+    width: 100%;
+    padding: 15px;
+}

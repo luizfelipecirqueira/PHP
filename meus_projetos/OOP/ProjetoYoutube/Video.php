@@ -28,7 +28,8 @@ require_once 'AcoesVideo.php';
         }
 
         public function setAvaliacao($a){
-            $this->avaliacao = $a;
+            $media = ($this->avaliacao + $a)/$this->views;
+            $this->avaliacao = $media;
         }
         
         public function getViews(){

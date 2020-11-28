@@ -23,11 +23,11 @@
         }
 
         public function getTotAssistido(){
-            return $this->$totAssistido;
+            return $this->totAssistido;
         }
 
         public function setTotAssistido($t){
-            $this->$totAssistido = $t;
+            $this->totAssistido = $t;
         }
     }
 ?>

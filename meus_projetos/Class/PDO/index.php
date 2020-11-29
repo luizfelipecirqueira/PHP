@@ -2,6 +2,7 @@
     <div class="Content">
         <?php
             include ("ClassConexao.php");
+            include ("ClassCrud.php");
         
         ?>
     </div>

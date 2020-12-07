@@ -1,5 +1,4 @@
 <?php
-    include ('ClassConexao.php');
     class ClassCrud extends ClassConexao{
         //Atributos
         private $crud;
